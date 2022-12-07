@@ -31,7 +31,7 @@
 			<p>So you can take great pride in your results!</p>
 			<br>
 			<br>
-			<button id="action_button" onClick="document.getElementById('contact').scrollIntoView();">Let's get started</button>
+			<button id="action_button" onClick="document.getElementById('contact').scrollTo({behavior:'smooth'});">Let's get started</button>
 		</div>
 		<div id="latest">
 			<a data-pin-do="embedBoard" data-pin-board-width="auto" data-pin-scale-height="auto" data-pin-scale-width="auto" href="https://www.pinterest.com/itsoasi/portfolio/" target="_blank"></a>
@@ -39,9 +39,12 @@
 		</div>
 	</div>
 	<div id="contact">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczoMjwa_z8GXJ_qixwaZe1hdZDNVg43dQDdPi6Z0X-UXGwUw/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		<div id="action">
+			<h1>How can we help you?</h1>
+			<a id="action_button" href="https://docs.google.com/forms/d/e/1FAIpQLSczoMjwa_z8GXJ_qixwaZe1hdZDNVg43dQDdPi6Z0X-UXGwUw/viewform?usp=sf_link">Fill out a form</a>
+		</div>
 		<div id="socials">
-			<h1>Thanks for Visiting!</h1>
+			<h1>Or chat with us on:</h1>
 			<a id="facebook" href=""><img class="social_icon" src="./static/png/007-facebook-1.png" alt="">instagram</a>
 			<a id="instagram" href=""><img class="social_icon" src="./static/png/001-instagram.png" alt="">facebook</a>
 			<a id="twitter" href=""><img class="social_icon" src="./static/png/006-twitter-1.png" alt="">twitter</a>
