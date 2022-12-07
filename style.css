@@ -107,3 +107,36 @@ body {
 	height: 1em;
 	padding-right: 1em;
 }
+
+@media screen and (max-width: 1000px) {	
+	#logo{
+		height: auto;
+		max-width: 80vw;
+	}
+	#hero{
+		flex-direction: column;
+		align-items: center;
+		gap: auto;
+		text-align: center;
+	}
+	#contact{flex-direction: column;}
+	#socials{flex-direction: column;}
+	#featured{
+		flex-direction: column;
+		width: 60vw;
+	}
+	#featured > img {
+		max-height: 60vh;
+	}	
+	#featured > div {
+		align-self: stretch;
+		min-width: fit-content;
+	}
+	#portfolio > #action{
+		height: auto;
+	}	
+	#portfolio > #latest{
+		width: 80%;
+	}
+	
+}
