@@ -65,7 +65,7 @@ body {
 #socials {
 	display: flex;
 	flex-direction: column;
-	float: right;
+	padding-bottom: 5em;
 }
 
 #socials > a {
@@ -102,6 +102,10 @@ body {
 
 #attributions {
 	font-size: .5em;
+}
+
+#portfolio > #latest{
+	width: 80%;
 }
 
 .social_icon {
@@ -143,5 +147,4 @@ body {
 	#portfolio > #latest{
 		width: 80%;
 	}
-	
 }
