@@ -12,20 +12,21 @@ body {
 }
 #action_button {
 	font-family: 'Eczar', serif;
+	color: white;
 	width: fit-content;
 	background: rgb(255,0,0);
 	background: linear-gradient(139deg, rgba(255,0,0,1) 0%, rgba(180,5,5,1) 60%, rgba(121,9,9,1) 65%, rgba(121,9,9,1) 100%);	background-color: transparent;
 	border: none;
-	border-radius: 3em 0em 5em 0em;
-	padding: .5em;
-	transition: font-size .2s  cubic-bezier(.25,.63,.61,.83);}
+	border-radius: 4em .7em 5em .1em;
+	padding: 1em;
+	transition: font-size .8s  cubic-bezier(.25,.63,.61,.83);}
 
 #action_button:hover{
-	font-size: large;
+	cursor: pointer;
+	font-size: 1.01em;
 }
 
 #action_button > img {
-	color: white;
 	position: absolute;
 	height: 3.5em;
 	align-self: center;
@@ -64,7 +65,7 @@ body {
 #socials {
 	display: flex;
 	flex-direction: column;
-	float: right;
+	padding-bottom: 5em;
 }
 
 #socials > a {
@@ -103,9 +104,17 @@ body {
 	font-size: .5em;
 }
 
+#portfolio > #latest{
+	width: 80%;
+}
+
 .social_icon {
 	height: 1em;
 	padding-right: 1em;
+}
+
+#form {
+	border: none;
 }
 
 @media screen and (max-width: 1000px) {	
@@ -138,5 +147,4 @@ body {
 	#portfolio > #latest{
 		width: 80%;
 	}
-	
 }
