@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
 		<div className='header'>
-			<img className='logo' src="./src/assets/logo_full_22_12_6.png"></img>
+			<img className='logo' src="./logo_full_22_12_6.png"></img>
 			<div className='nav row'>
 				<a href='https://instagram.com/roseling_gd?igshid=OGQ5ZDc2ODk2ZA==' target='_blank'>
 					<Icons.Instagram className='icon' />
