@@ -18,6 +18,7 @@
 	padding: 1rem 2rem;
 	background-color: rgba(255, 255, 255, 8%);
 	border-radius: 10px;
+	gap: .2rem;
 	height: fit-content;
 	text-align: right;
 	max-width: fit-content;
@@ -32,6 +33,12 @@
 
 .row{
 	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.col{
+	display: flex;
+	flex-direction: column;
 	gap: 1rem;
 }
 .wrap{
@@ -62,4 +69,32 @@
 	&:hover{
 		transform: scale(110%);
 	}
+}
+
+@media screen  and (max-width: 800px) {
+	#root{
+		padding: 0;
+		justify-content: center;
+		margin: .8rem;
+		width: auto;
+	}
+	#filter{
+		flex-direction: row !important;
+		max-width: 100%;
+		width: auto;
+		justify-content: space-between;
+	}
+	#catalog{
+		flex-direction: column;
+		align-items: stretch;
+		padding: 0;
+	}
+	.catalog_item{
+		width: auto;
+	}
+	#catalog_list{
+		flex-direction: column;
+		margin: 0;
+	}
+	
 }
