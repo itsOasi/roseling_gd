@@ -45,8 +45,11 @@
 	display: flex;
 	flex-wrap: wrap;
 }
-.container{
-	padding: 0 2rem
+.nav{
+	gap: 2rem;
+}
+.icon{
+	font-size: 1.5rem;
 }
 #catalog_list{
 	width: auto;
