@@ -9,10 +9,7 @@ function Header() {
 		<div className='header'>
 			<img className='logo' src="./src/assets/logo_full_22_12_6.png"></img>
 			<div className='nav row'>
-				<a>
-					<Icons.Twitter className='icon' />
-				</a>
-				<a>
+				<a href='https://instagram.com/roseling_gd?igshid=OGQ5ZDc2ODk2ZA==' target='_blank'>
 					<Icons.Instagram className='icon' />
 				</a>
 			</div>
