@@ -7,7 +7,7 @@ function Container2() {
 
   return (
 	<>
-		<h1>Our Art</h1>
+		<h1>Welcome</h1>
 		<div id="catalog" className='row container'>
 			<Filter />
 			<Catalog />

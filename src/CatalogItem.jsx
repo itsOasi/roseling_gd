@@ -7,14 +7,15 @@ function CatalogItem(props) {
 	}
 	return (
 		<>
-			<div className='catalog_item'
-					style={styles}>
+			<a className='catalog_item'
+					style={styles}
+					href={props.src}>
 				<div className='desc'>
 				<h2>{props.name}</h2>
 				<p>{props.desc}</p>
 				</div>
 				
-			</div>
+			</a>
 		</>
 	)
 }

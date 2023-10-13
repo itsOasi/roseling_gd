@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import * as Icons from 'react-bootstrap-icons'
 
 function Header() {
   const [count, setCount] = useState(0)
@@ -7,10 +8,10 @@ function Header() {
     <>
 		<div className='header'>
 			<img className='logo' src="./src/assets/logo_full_22_12_6.png"></img>
-			<div className='row'>
-				<a>Merch</a>
-				<a>About</a>
-				<a>Contact Us</a>
+			<div className='nav row'>
+				<a href='https://instagram.com/roseling_gd?igshid=OGQ5ZDc2ODk2ZA==' target='_blank'>
+					<Icons.Instagram className='icon' />
+				</a>
 			</div>
 		</div>
     </>
