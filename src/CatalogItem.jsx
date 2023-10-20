@@ -1,3 +1,6 @@
+import { useState } from "react";
+import ItemModal from "./ItemModal";
+
 function CatalogItem(props) {
 	let styles = {
 		backgroundImage: "url("+props.src+")",
@@ -5,17 +8,27 @@ function CatalogItem(props) {
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat'
 	}
+
+	const [modal, setModal] = useState(false);
+
+	let toggleModal = () => {
+		setModal(!modal);
+	}
+
 	return (
 		<>
 			<a className='catalog_item'
 					style={styles}
-					href={props.src}>
+					onClick={toggleModal}>
 				<div className='desc'>
 				<h2>{props.name}</h2>
-				<p>{props.desc}</p>
 				</div>
 				
 			</a>
+
+			{modal && (<div>
+				<ItemModal name={props.name} src={props.src} desc={props.desc} modalClick={toggleModal}></ItemModal>
+			</div>)}
 		</>
 	)
 }
