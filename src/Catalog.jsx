@@ -36,7 +36,7 @@ function Catalog() {
 			</>
 		)
 	}
-	return (<h2>Nothing to see here</h2>)
+	return (<h2>Loading</h2>)
 }
 
 export default Catalog
