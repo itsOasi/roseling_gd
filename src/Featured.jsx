@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import CatalogItem from './CatalogItem'
+import FeaturedItem from './FeaturedItem';
 const HOST = "https://roseling-server-2jochkae6a-uc.a.run.app";
 
 
 
-function Catalog() {
+function Featured() {
 	// name, desc, src
 	const [cat, setCat] = useState([])
 
@@ -25,18 +25,18 @@ function Catalog() {
 	if (cat.length > 0){
 
 		return (
-			<>
-				<div id='catalog_list' className='row wrap'>
-					{cat.map(piece => <CatalogItem
+			<div>
+				<div id='featured' className='row'>
+					{cat.map(piece => <FeaturedItem
 					key={piece.title}
 					name={piece.title} 
 					desc={piece.desc}
 					src={piece.image} />)}
 				</div>
-			</>
+			</div>
 		)
 	}
-	return (<h2>Loading...</h2>)
+	return (<h2>Nothing to see here</h2>)
 }
 
-export default Catalog
+export default Featured

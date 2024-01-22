@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './Header'
+import Container1 from './Container1'
 import Container2 from './Container2'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
 		<Header />
+		<Container1 />
 		<Container2 />
     </>
   )
