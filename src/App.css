@@ -1,12 +1,12 @@
 :root{
 	--bkg-grey: rgba(255, 255, 255, 8%);
 	--bkg-charcoal: rgb(10, 10, 10);
-	--bkg-red: red;
+	--bkg-red: #960F0F;
 }
 #root {
   width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,10 +16,15 @@
 }
 
 #header{
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	width: 98%;
+	z-index: 100;
+	padding: 1rem;
+	padding-top: 0;
+	margin: auto;
 }
 #filter{
 	padding: 1rem 2rem;
@@ -70,7 +75,6 @@
 }
 #catalog_list{
 	width: auto;
-	justify-content: space-between;
 	gap: 1rem;
 	margin: 0rem 2rem;
 }
@@ -114,8 +118,8 @@
 	padding: 1rem
 }
 .modal{
-	position: absolute;
-	z-index: 10;
+	position: fixed;
+	z-index: 101;
 	left: 0;
 	top: 0;
 	width: 100vw;
@@ -140,22 +144,44 @@
 }
 .button{
 	padding: 1rem 2rem;
+	display: flex;
 	font-weight: bold;
 	font-size: large;
 	border-radius: 10px;
 	background-color: var(--bkg-grey);
+	& > .hidden_msg{
+		display: none;
+	}
+	&:hover > .hidden_msg{
+		background-color: var(--bkg-grey);
+		display: absolute;
+		margin: 1rem 1rem;
+	}
 }
 .button.action{
 	background-color: var(--bkg-red);
 	
 }
-
+.center{
+	align-items: center;
+}
 @media screen  and (max-width: 800px) {
 	#root{
 		padding: 0;
 		justify-content: center;
-		margin: .8rem;
+		margin: 0;
 		width: 100%;
+	}
+	.title{
+		font-size: 3rem !important;
+	}
+	.greeting{
+		&>h3{
+			display: none;
+		}
+	}
+	#hero.row{
+		flex-direction: column;
 	}
 	#filter{
 		flex-direction: row !important;
@@ -166,7 +192,7 @@
 	#catalog{
 		flex-direction: column;
 		align-items: stretch;
-		padding: 0;
+		padding: .8rem;
 	}
 	.catalog_item{
 		width: auto;
@@ -175,4 +201,8 @@
 		flex-direction: column;
 		margin: 0;
 	}
+	#header{
+		top: 0;
+	}
+
 }
