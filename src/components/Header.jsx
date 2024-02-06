@@ -17,6 +17,7 @@ function Header() {
 				<Button href='https://instagram.com/roseling_gd?igshid=OGQ5ZDc2ODk2ZA==' msg={<Icons.Instagram className='icon' />}></Button>
 				<Button action="true" href="/services" msg="Request a Service"></Button>
 				<Button action="true" href="/shop" msg="Visit our store"></Button>
+				<Button action="true" href="https://roseling-graphic-design.printify.me/products" msg="Shop"></Button>
 			</div>
 		</div>
     </>
