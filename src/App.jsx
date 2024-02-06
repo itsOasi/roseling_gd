@@ -1,17 +1,23 @@
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { useState } from 'react'
 import './App.css'
-import Header from './Header'
-import Container1 from './Container1'
-import Container2 from './Container2'
+import Header from './components/Header'
+import Services from './pages/Services'
+import Landing from './pages/Landing'
+import Shop from './pages/Shop'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
 		<Header />
-		<Container1 />
-		<Container2 />
+		<BrowserRouter>
+			<Routes>
+				<Route index element={<Landing/>}></Route>
+				<Route path="/services" element={<Services/>}></Route>
+				<Route path="/shop" element={<Shop/>}></Route>
+			</Routes>
+		</BrowserRouter>
     </>
   )
 }

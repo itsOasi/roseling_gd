@@ -12,7 +12,7 @@
   flex-direction: column;
   align-content: center;
   overflow: hidden;
-  font-family: 'Eczar', 'Times New Roman', Times, serif;
+  font-family: 'Arial', sans-serif;
 }
 
 #header{
@@ -69,6 +69,7 @@
 }
 .nav{
 	gap: 2rem;
+	margin: 0 1rem;
 }
 .icon{
 	font-size: 1.5rem;
@@ -143,28 +144,19 @@
 	}
 }
 .button{
-	padding: 1rem 2rem;
+	padding: 1rem;
 	display: flex;
 	font-weight: bold;
 	font-size: large;
-	border-radius: 10px;
-	background-color: var(--bkg-grey);
-	& > .hidden_msg{
-		display: none;
-	}
-	&:hover > .hidden_msg{
-		background-color: var(--bkg-grey);
-		display: absolute;
-		margin: 1rem 1rem;
-	}
 }
 .button.action{
-	background-color: var(--bkg-red);
+	text-decoration: underline;
 	
 }
 .center{
 	align-items: center;
 }
+
 @media screen  and (max-width: 800px) {
 	#root{
 		padding: 0;
@@ -179,6 +171,9 @@
 		&>h3{
 			display: none;
 		}
+	}
+	.nav{
+		gap: 1rem;
 	}
 	#hero.row{
 		flex-direction: column;
@@ -204,5 +199,11 @@
 	#header{
 		top: 0;
 	}
-
+	.button, .button.action{
+		font-size: 1rem;
+	}
+	.services>.button.action{
+		font-size: 1.5rem;
+		width: 80%;
+	}
 }
