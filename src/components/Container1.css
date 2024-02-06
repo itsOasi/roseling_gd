@@ -1,0 +1,40 @@
+#hero{
+	padding: 8rem 1rem;
+	padding-bottom: 0;
+	background-color: darkred;
+	background-size: cover;
+	justify-content: space-between;
+	border-radius: 0 0 15px 15px;
+}
+.greeting{
+	width: 50%;
+	&>h3{
+		text-align: left;
+		font-size: 2rem;
+	}
+}
+.title{
+	font-size: 6.5rem;
+	text-align: left;
+	margin: 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #000;
+}
+.cover_image{
+	width: 50vw;
+	transition: all 1s ease-in-out;
+	&:hover{
+		scale: 115%
+	}
+}
+.services {
+	gap: 3rem;
+	&>.button{
+		font-size: 2rem;
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+		width: 18rem;
+	}
+}
