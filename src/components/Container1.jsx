@@ -11,10 +11,10 @@ function Container1() {
 	<div>
 		<div id="hero" className='row container center'>
 			<div className='greeting'>
-				<h1 className="title">SuperBowl Merch Limited Time Only</h1>
+				<h1 className="title">Welcome to Roseling Graphic Design</h1>
 			</div>
 			<a href="/shop">
-				<img class="cover_image" src="src\assets\superbowl.png" alt="" srcset="" />
+				<img class="cover_image" src="src\assets\_1cff7f32-0952-4f63-94f2-7e574d07f533.jpeg" alt="" srcset="" />
 				<h3>Visit our store or...</h3>
 			</a>
 
