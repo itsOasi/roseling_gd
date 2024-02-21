@@ -25,8 +25,8 @@ function ItemModal(props) {
 							<div className="row nav">
 								<Button msg={<Icons.Chat className='chat' />}></Button>
 								<Button msg={<Icons.Share className='chat' />}></Button>
+								<Button action="true" msg="Shop"></Button>
 							</div>
-							{/* <Button action="true" msg="Buy Merch"></Button> */}
 						</div>
 					</div>
 				</div>

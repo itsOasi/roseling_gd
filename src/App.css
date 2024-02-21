@@ -153,6 +153,12 @@
 	text-decoration: underline;
 	
 }
+.left{
+	align-items: flex-start;
+}
+.right{
+	align-items: flex-end;
+}
 .center{
 	align-items: center;
 }
@@ -194,7 +200,7 @@
 	}
 	#catalog_list{
 		flex-direction: column;
-		margin: 0;
+		margin: 0 20vw !important;
 	}
 	#header{
 		top: 0;
