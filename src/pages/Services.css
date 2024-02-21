@@ -1,6 +1,27 @@
 .services{
+	margin-bottom: 3rem;
 	&>h1{
-		padding: 10rem;
+		padding: 2rem 10rem;
+		padding-top: 8rem;
 	}
-	margin: 0 20rem;
+	&>.container{
+		justify-content: space-evenly;
+		&>div{
+			transition: all .5s ease-in-out;
+			&:hover{
+				scale: 105%;
+			}
+			padding: 1.5rem;
+			background-color: rgba(255, 255, 255, .1);
+			border-radius: 15px;
+			width: 25vw;
+			height: fit-content;
+		}
+	}
+}
+a.row{
+	gap: 0;	
+	&>*{
+		margin: auto;
+	}
 }

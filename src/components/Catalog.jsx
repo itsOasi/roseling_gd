@@ -26,7 +26,7 @@ function Catalog() {
 
 		return (
 			<>
-				<div id='catalog_list' className='row wrap'>
+				<div id='catalog_list' className='row wrap center'>
 					{cat.map(piece => <CatalogItem
 					key={piece.title}
 					name={piece.title} 

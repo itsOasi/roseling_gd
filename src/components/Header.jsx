@@ -9,7 +9,7 @@ function Header() {
     <>
 		<div id='header'>
 			<a href="/">
-			{window.innerWidth < 800 ? <img className='logo' src="./logo_r_24_1_29.png" classes="social"></img> : <img className='logo' src="./logo_full_24_1_29.png"></img> }
+			{window.innerWidth < 800 ? <img className='logo' src="./light.png" classes="social"></img> : <img className='logo' src="./light.png"></img> }
 
 			</a>
 			
