@@ -205,6 +205,9 @@
 	#header{
 		top: 0;
 	}
+	.row{
+        flex-direction: column;
+    }
 	.button, .button.action{
 		font-size: 1rem;
 	}

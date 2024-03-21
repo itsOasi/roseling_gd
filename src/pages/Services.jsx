@@ -36,7 +36,7 @@ function Services(props) {
 					</div>
 					<div className="container col left">
 						<h2>Website/App</h2>
-						<li>Basic Websie/App $3000</li>
+						<li>Basic Website/App $3000</li>
 						<li>Social Media Package $4500</li>
 						<a className="row" href="https://forms.gle/xMTyGRRkWJkbAecSA">
 						<Button action="true"
